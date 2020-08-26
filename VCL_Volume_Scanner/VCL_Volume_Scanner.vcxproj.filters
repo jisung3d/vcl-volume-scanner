@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VCL_Volume_Scanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VCL_Volume_Scanner_Doc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VCL_Volume_Scanner_View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_camera_parameters.cpp">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_cube_tsdf_float.cpp">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_edge_map.cpp">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_image_pyramid.cpp">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_matrix_rgbd.cpp">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_scanner_parameter.cpp">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_tracking_state.cpp">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Util\z_yooji_evaluation.cpp">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Util\z_yooji_frame_capture.cpp">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_color_segmentation.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_contour_detection.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_image_matcher.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_image_processor.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_object_extractor.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_object_scanner.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_shape_from_silhouette.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_volume_integrator.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_Utility_Display.cpp">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_Utility_Mesh_Generation.cpp">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_Utility_VCL_3DO.cpp">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_VCL_DoCube.cpp">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_VCL_Mesh_to_DoS.cpp">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_VCL_Ray_Carving.cpp">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Util\z_yooji_kaision_openni.cpp">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_libraries\MaxFlow\graph.cpp">
+      <Filter>Libraries\MaxFlow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\_libraries\MaxFlow\maxflow.cpp">
+      <Filter>Libraries\MaxFlow</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_camera_tracker.cpp">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="rgbd\test\test_odometry.cpp">
+      <Filter>Libraries\RgbdOdometry</Filter>
+    </ClCompile>
+    <ClCompile Include="z_yooji_interlib_convert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aruco\test\test_boarddetection.cpp">
+      <Filter>Libraries\Aruco_Pose</Filter>
+    </ClCompile>
+    <ClCompile Include="SITM\JM_Contour_Detection.cpp">
+      <Filter>Yooji_2014_SITM</Filter>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_scanner_display.cpp">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VCL_Volume_Scanner_View.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VCL_Volume_Scanner_Doc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VCL_Volume_Scanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\GPU\_yooji_cuda_object_cube.h">
+      <Filter>Yooji_2017_STAC\Object\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\GPU\_yooji_cuda_object_cube.hpp">
+      <Filter>Yooji_2017_STAC\Object\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\GPU\_yooji_cuda_tracking_state.h">
+      <Filter>Yooji_2017_STAC\Object\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\CPU\_yooji_camera_parameters.h">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\CPU\_yooji_cube_tsdf_float.h">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\CPU\_yooji_edge_map.h">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\CPU\_yooji_image_pyramid.h">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\CPU\_yooji_matrix_rgbd.h">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\CPU\_yooji_scanner_parameter.h">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\CPU\_yooji_tracking_state.h">
+      <Filter>Yooji_2017_STAC\Object\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_cuda_defines.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_cuda_img_proc.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_cuda_math.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_cuda_math.hpp">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_evaluation.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_frame_capture.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_math_inlines.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_scanner_defines.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_scanner_display.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_SITM_defines.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_color_segmentation.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_contour_detection.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_image_matcher.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_image_processor.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_object_extractor.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_object_scanner.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_shape_from_silhouette.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_volume_integrator.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\GPU\_yooji_cuda_img_proc.h">
+      <Filter>Yooji_2017_STAC\Engine\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\GPU\_yooji_cuda_pose_tracker.h">
+      <Filter>Yooji_2017_STAC\Engine\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\GPU\_yooji_cuda_tsdf_renderer.h">
+      <Filter>Yooji_2017_STAC\Engine\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\GPU\_yooji_cuda_volume_integrator.h">
+      <Filter>Yooji_2017_STAC\Engine\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\_yooji_2014_SITM.h">
+      <Filter>Yooji_2017_STAC</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\VCL_3DO\_Utility_Display.h">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\VCL_3DO\_Utility_Mesh_Generation.h">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\VCL_3DO\_Utility_VCL_3DO.h">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\VCL_3DO\_VCL_DoCube.h">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\VCL_3DO\_VCL_Mesh_to_DoS.h">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\VCL_3DO\_VCL_Ray_Carving.h">
+      <Filter>Yooji_2017_STAC\VCL_3DO</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\_VCL_2014_3DO.h">
+      <Filter>Yooji_2017_STAC</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Util\_yooji_kaision_openni.h">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_libraries\ITMMath\ITMLibDefines.h">
+      <Filter>Libraries\ITMMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_libraries\ITMMath\ITMMath.h">
+      <Filter>Libraries\ITMMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_libraries\ITMMath\ITMMatrix.h">
+      <Filter>Libraries\ITMMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_libraries\ITMMath\ITMVector.h">
+      <Filter>Libraries\ITMMath</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\_yooji_2016_object_scanning.h">
+      <Filter>Yooji_2017_STAC</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\_yooji_2017_cuda_object_scanner.cuh">
+      <Filter>Yooji_2017_STAC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_libraries\MaxFlow\block.h">
+      <Filter>Libraries\MaxFlow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\_libraries\MaxFlow\graph.h">
+      <Filter>Libraries\MaxFlow</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Engine\CPU\_yooji_camera_tracker.h">
+      <Filter>Yooji_2017_STAC\Engine\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="_yooji_interlib_convert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="STAC\Object\GPU\_yooji_cuda_rgbd_frame.h">
+      <Filter>Yooji_2017_STAC\Object\GPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SITM\JM_Contour_Detection.h">
+      <Filter>Yooji_2014_SITM</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar_custom.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\VCL_Volume_Scanner.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\VCL_Volume_Scanner_Doc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="..\_libraries\MaxFlow\CHANGES.TXT">
+      <Filter>Libraries\MaxFlow</Filter>
+    </Text>
+    <Text Include="..\_libraries\MaxFlow\README.TXT">
+      <Filter>Libraries\MaxFlow</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5568eeb1-4f76-4b57-b231-505808d5e32e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{33072111-d581-467d-9e57-f78353135002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{13193a50-2af6-4634-8d96-dcc97c22af34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{2b9052d2-dedf-4351-954d-f0c232e7a325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\ITMMath">
+      <UniqueIdentifier>{95a573ce-4340-450a-a206-2b1334f4d7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\MaxFlow">
+      <UniqueIdentifier>{ccde5de2-168a-4e8f-abf3-ff417bb7b511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC">
+      <UniqueIdentifier>{eb44ed30-4350-4288-b143-518f0c6d3c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC\Object">
+      <UniqueIdentifier>{840ea682-6ec6-458b-abf8-76f7595ab72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC\Object\GPU">
+      <UniqueIdentifier>{7dbfc288-18e0-43b3-9bc4-681e18aad9ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC\Object\CPU">
+      <UniqueIdentifier>{20d7b8df-0758-4088-b1f9-d3cdf046aaff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC\Util">
+      <UniqueIdentifier>{7dc75df0-9106-4903-8df0-b9c96fefd46c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC\Engine">
+      <UniqueIdentifier>{9694d770-d6f2-40c8-9faf-38796e60ca5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC\Engine\CPU">
+      <UniqueIdentifier>{35f68b2c-1b8c-4ef2-86e5-aed95fc59ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC\Engine\GPU">
+      <UniqueIdentifier>{2619db6b-5484-4464-9a39-a51f682a260a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2017_STAC\VCL_3DO">
+      <UniqueIdentifier>{4044ea71-7ca7-4d5f-8243-6f7dca71b546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\RgbdOdometry">
+      <UniqueIdentifier>{98b371c0-5e30-426b-bf52-cf40e99c6edf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\Aruco_Pose">
+      <UniqueIdentifier>{17d727de-5ddd-494e-90f2-d3b186124feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yooji_2014_SITM">
+      <UniqueIdentifier>{a1abd0c9-511b-4799-a6cf-105ad943f693}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VCL_Volume_Scanner.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VCL_Volume_Scanner.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\_libraries\MaxFlow\instances.inc">
+      <Filter>Libraries\MaxFlow</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="STAC\Util\z_yooji_cuda_math.cu">
+      <Filter>Yooji_2017_STAC\Util</Filter>
+    </CudaCompile>
+    <CudaCompile Include="STAC\Engine\GPU\z_yooji_cuda_img_proc.cu">
+      <Filter>Yooji_2017_STAC\Engine\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="STAC\Engine\GPU\z_yooji_cuda_pose_tracker.cu">
+      <Filter>Yooji_2017_STAC\Engine\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="STAC\Engine\GPU\z_yooji_cuda_tsdf_renderer.cu">
+      <Filter>Yooji_2017_STAC\Engine\GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="STAC\Engine\GPU\z_yooji_cuda_volume_integrator.cu">
+      <Filter>Yooji_2017_STAC\Engine\GPU</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

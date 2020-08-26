@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36BE1FDE-5215-416A-A65B-718C83692F3C}</ProjectGuid>
+    <RootNamespace>VCL_Volume_Scanner</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>VCL_Volume_Scanner</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH)</ExecutablePath>
+    <IncludePath>$(CudaToolkitIncludeDir);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(CudaToolkitLibDir);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\_libraries\SiftGPU\include;..\_libraries\Eigen;..\_libraries\TBB\include;..\_libraries\OpenCV330\include;..\_libraries\MaxFlow;..\_libraries\ITMMath;..\_libraries\KAISION\include;..\_libraries\VLFeat\include;..\_libraries\OpenNI2\Include;..\_libraries\CUDA\common\inc;..\_libraries\Yooji_Kinect2_KAISION\include;..\_libraries\Kinect2\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>DevIL.lib;glew32.lib;glew32s.lib;glut32.lib;SIFTGPU.lib;opencv_calib3d330.lib;opencv_core330.lib;opencv_highgui330.lib;opencv_imgcodecs330.lib;opencv_imgproc330.lib;opencv_features2d330.lib;opencv_videoio330.lib;opencv_ts330.lib;opencv_rgbd330.lib;opencv_aruco330.lib;OpenNI2.lib;vl.lib;cuda.lib;cudart.lib;kaision_bootstrap.lib;kaision_io.lib;kaision_array.lib;kaision_algebra.lib;kaision_color.lib;kaision_hello.lib;kaision_jpeg.lib;kaision_grabber.lib;kaision_sound.lib;kaision_screen.lib;kaision_screen3d.lib;kaision_graph_xy.lib;kaision_graph_line.lib;kaision_classifier.lib;kaision_camera_digital.lib;kaision_object_geometric.lib;kaision_geometry.lib;kaision_tempo.lib;kaision_graph3d.lib;kaision_depth.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\_libraries\SiftGPU\lib;..\_libraries\TBB\lib\intel64\vc12;..\_libraries\OpenCV330\x64\vc12\lib;..\_libraries\KAISION\lib;..\_libraries\VLFEAT\bin\win64;..\_libraries\OpenNI2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <Defines>MFC</Defines>
+      <Runtime>MD</Runtime>
+      <CudaRuntime>Shared</CudaRuntime>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="..\_libraries\MaxFlow\CHANGES.TXT" />
+    <Text Include="..\_libraries\MaxFlow\README.TXT" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_libraries\ITMMath\ITMLibDefines.h" />
+    <ClInclude Include="..\_libraries\ITMMath\ITMMath.h" />
+    <ClInclude Include="..\_libraries\ITMMath\ITMMatrix.h" />
+    <ClInclude Include="..\_libraries\ITMMath\ITMVector.h" />
+    <ClInclude Include="..\_libraries\MaxFlow\block.h" />
+    <ClInclude Include="..\_libraries\MaxFlow\graph.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SITM\JM_Contour_Detection.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_camera_tracker.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_color_segmentation.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_contour_detection.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_image_matcher.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_image_processor.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_object_extractor.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_object_scanner.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_shape_from_silhouette.h" />
+    <ClInclude Include="STAC\Engine\CPU\_yooji_volume_integrator.h" />
+    <ClInclude Include="STAC\Engine\GPU\_yooji_cuda_img_proc.h" />
+    <ClInclude Include="STAC\Engine\GPU\_yooji_cuda_pose_tracker.h" />
+    <ClInclude Include="STAC\Engine\GPU\_yooji_cuda_tsdf_renderer.h" />
+    <ClInclude Include="STAC\Engine\GPU\_yooji_cuda_volume_integrator.h" />
+    <ClInclude Include="STAC\Object\CPU\_yooji_camera_parameters.h" />
+    <ClInclude Include="STAC\Object\CPU\_yooji_cube_tsdf_float.h" />
+    <ClInclude Include="STAC\Object\CPU\_yooji_edge_map.h" />
+    <ClInclude Include="STAC\Object\CPU\_yooji_image_pyramid.h" />
+    <ClInclude Include="STAC\Object\CPU\_yooji_matrix_rgbd.h" />
+    <ClInclude Include="STAC\Object\CPU\_yooji_scanner_parameter.h" />
+    <ClInclude Include="STAC\Object\CPU\_yooji_tracking_state.h" />
+    <ClInclude Include="STAC\Object\GPU\_yooji_cuda_object_cube.h" />
+    <ClInclude Include="STAC\Object\GPU\_yooji_cuda_object_cube.hpp" />
+    <ClInclude Include="STAC\Object\GPU\_yooji_cuda_rgbd_frame.h" />
+    <ClInclude Include="STAC\Object\GPU\_yooji_cuda_tracking_state.h" />
+    <ClInclude Include="STAC\Util\_yooji_cuda_defines.h" />
+    <ClInclude Include="STAC\Util\_yooji_cuda_img_proc.h" />
+    <ClInclude Include="STAC\Util\_yooji_cuda_math.h" />
+    <ClInclude Include="STAC\Util\_yooji_cuda_math.hpp" />
+    <ClInclude Include="STAC\Util\_yooji_evaluation.h" />
+    <ClInclude Include="STAC\Util\_yooji_frame_capture.h" />
+    <ClInclude Include="STAC\Util\_yooji_kaision_openni.h" />
+    <ClInclude Include="STAC\Util\_yooji_math_inlines.h" />
+    <ClInclude Include="STAC\Util\_yooji_scanner_defines.h" />
+    <ClInclude Include="STAC\Util\_yooji_scanner_display.h" />
+    <ClInclude Include="STAC\Util\_yooji_SITM_defines.h" />
+    <ClInclude Include="STAC\VCL_3DO\_Utility_Display.h" />
+    <ClInclude Include="STAC\VCL_3DO\_Utility_Mesh_Generation.h" />
+    <ClInclude Include="STAC\VCL_3DO\_Utility_VCL_3DO.h" />
+    <ClInclude Include="STAC\VCL_3DO\_VCL_DoCube.h" />
+    <ClInclude Include="STAC\VCL_3DO\_VCL_Mesh_to_DoS.h" />
+    <ClInclude Include="STAC\VCL_3DO\_VCL_Ray_Carving.h" />
+    <ClInclude Include="STAC\_VCL_2014_3DO.h" />
+    <ClInclude Include="STAC\_yooji_2014_SITM.h" />
+    <ClInclude Include="STAC\_yooji_2016_object_scanning.h" />
+    <ClInclude Include="STAC\_yooji_2017_cuda_object_scanner.cuh" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VCL_Volume_Scanner.h" />
+    <ClInclude Include="VCL_Volume_Scanner_Doc.h" />
+    <ClInclude Include="VCL_Volume_Scanner_View.h" />
+    <ClInclude Include="_yooji_interlib_convert.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\_libraries\MaxFlow\graph.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\_libraries\MaxFlow\maxflow.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="aruco\test\test_boarddetection.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="rgbd\test\test_odometry.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SITM\JM_Contour_Detection.cpp" />
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_camera_tracker.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_color_segmentation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_contour_detection.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_image_matcher.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_image_processor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_object_extractor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_object_scanner.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_scanner_display.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_shape_from_silhouette.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Engine\CPU\z_yooji_volume_integrator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_camera_parameters.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_cube_tsdf_float.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_edge_map.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_image_pyramid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_matrix_rgbd.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_scanner_parameter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Object\CPU\z_yooji_tracking_state.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Util\z_yooji_evaluation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Util\z_yooji_frame_capture.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\Util\z_yooji_kaision_openni.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_Utility_Display.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_Utility_Mesh_Generation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_Utility_VCL_3DO.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_VCL_DoCube.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_VCL_Mesh_to_DoS.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="STAC\VCL_3DO\z_VCL_Ray_Carving.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VCL_Volume_Scanner.cpp" />
+    <ClCompile Include="VCL_Volume_Scanner_Doc.cpp" />
+    <ClCompile Include="VCL_Volume_Scanner_View.cpp" />
+    <ClCompile Include="z_yooji_interlib_convert.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VCL_Volume_Scanner.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\_libraries\MaxFlow\instances.inc" />
+    <None Include="res\VCL_Volume_Scanner.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar_custom.bmp" />
+    <Image Include="res\VCL_Volume_Scanner.ico" />
+    <Image Include="res\VCL_Volume_Scanner_Doc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="STAC\Engine\GPU\z_yooji_cuda_img_proc.cu" />
+    <CudaCompile Include="STAC\Engine\GPU\z_yooji_cuda_pose_tracker.cu" />
+    <CudaCompile Include="STAC\Engine\GPU\z_yooji_cuda_tsdf_renderer.cu" />
+    <CudaCompile Include="STAC\Engine\GPU\z_yooji_cuda_volume_integrator.cu" />
+    <CudaCompile Include="STAC\Util\z_yooji_cuda_math.cu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.targets" />
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="VCL_Volume_Scanner.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

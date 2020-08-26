@@ -1,0 +1,63 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++에서 생성한 포함 파일입니다.
+// VCL_Volume_Scanner.rc에서 사용되고 있습니다.
+//
+#define IDD_ABOUTBOX                    100
+#define IDP_OLE_INIT_FAILED             100
+#define IDR_MAINFRAME                   128
+#define IDR_VCL_Object_ScanTYPE         130
+#define IDB_TOOLBAR                     321
+#define ID_INPUT_IMAGE                  32772
+#define ID_INPUT_IMAGESEQUENCE          32773
+#define ID_INPUT_VIDEOSTREAM            32774
+#define ID_BUTTON_PLAY                  32775
+#define ID_BUTTON_PAUSE                 32776
+#define ID_BUTTON_STOP                  32777
+#define ID_BUTTON_3D_SCANNING           32778
+#define ID_TEST_OBJECTSEGMENTATION      32780
+#define ID_TEST_LOADTSDFCUBE            32781
+#define ID_TEST_GRAPHCUT                32782
+#define ID_TEST_BACKGROUNDSUBTRACTION   32783
+#define ID_Menu                         32784
+#define ID_32785                        32785
+#define ID_SAVE_SAVETSDF                32786
+#define ID_SCANNING_KINECTFUSION        32787
+#define ID_SCANNING_ICP                 32788
+#define ID_SAVE_SAVE                    32789
+#define ID_SAVE_SAVEINPUTSEQUENCE       32790
+#define ID_SAVE_SAVEINPUTSEQUENCE32791  32791
+#define ID_FILE_CONVERT                 32792
+#define ID_CONVERT_VCLTOCXD             32793
+#define ID_LOAD_IMAGESEQUENCE           32794
+#define ID_IMAGESEQUENCE_NEW            32795
+#define ID_LOAD_LIVESTREAM              32796
+#define ID_LIVESTREAM_NEW               32797
+#define ID_LIVESTREAM_KINECTV2          32798
+#define ID_SCANNING_PHOTO               32799
+#define ID_TEST_DEPTHFLOW               32800
+#define ID_FILE_EXIT                    32801
+#define ID_SAVE_SAVEESTIMATEDTRAJACTORY 32802
+#define ID_TEST_RGBDODOMETRYOPENCV      32803
+#define ID_TEST_POSEESTIMATIONWITHARUCOMARKERSOPENCV 32804
+#define ID_TEST_GRADIENTFIELDDISPLAY    32805
+#define ID_TEST_SIFTGPUTEST             32806
+#define ID_TEST_SINGLEPOSEESTIMATIONWITHARUCOMARKERSOPENCV 32807
+#define ID_TEST_SEQUENCEPOSEESTIMATIONWITHCHARUCOMARKERSOPENCV 32808
+#define ID_TEST_SINGLEPOSEESTIMATIONWITHCHARUCOMARKERSOPENCV 32809
+#define ID_CALIBRATION_CAPTURERGB       32810
+#define ID_TEST_CHESSBOARDREMOVALFROMDEPTHMAPS 32811
+#define ID_SAVE_SAVESILHOUETTESEQUENCE  32812
+#define ID_SAVE_SAVEESTIMATEDTRAJACTORY32813 32813
+#define ID_CONVERT_TRANSFORMTOQUARTERNION 32814
+#define ID_TEST_AVERAGEIMAGE            32815
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        322
+#define _APS_NEXT_COMMAND_VALUE         32816
+#define _APS_NEXT_CONTROL_VALUE         1000
+#define _APS_NEXT_SYMED_VALUE           310
+#endif
+#endif
